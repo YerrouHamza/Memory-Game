@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+body{
+    // Creat style for inputeng plyer info.
+    .player-info{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgb(181, 197, 192);
+        opacity: .9;
+        z-index: 2;
+        div{
+            position: absolute;
+            top: 35%;
+            right: 50%;
+            transform: translate(50%, 50%);
+            form{
+                input{
+                    font-size: 17px;
+                    color: black;
+                    background-color: rgb(255, 255, 255);
+                    width: 300px;
+                    height: 26px;
+                    padding-left: 10px;
+                    border: 1px solid rgba(0, 0, 0, .7);
+                    border-radius: 3px;
+                    outline: none;
+                    opacity: 1;
+                    cursor: text;
+                    &:hover{
+                        border: 1px solid rgb(0, 0, 0);
+                    }
+                }
+            }
+            button{
+                font-size: 16px;
+                font-weight: bold;
+                background-color: salmon;
+                width: 100px;
+                height: 30px;
+                margin-top: 20px;
+                margin-left: 100px;
+                border:none;
+                border-radius: 4px;
+                opacity: .8;
+                cursor: pointer;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // creat style for game info.
+    .header-game{
+        max-width: 700px;
+        height: 40px;
+        margin:10px auto;
+        padding: 0 15px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .player-points{
+            margin-right: 15px;
+        }
+    }
+    
+    // creat style for game content
+    .memory-blocks-game{
+        display: flex;
+        width: 700px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        &.no-click{
+            pointer-events: none;
+        }
+        .head-memory{
+            height: 130px;
+            position: relative;
+            transition: transform .5s;
+            transform-style: preserve-3d;
+            flex: 1 0 130px;
+            margin: 0 5px 5px;
+            cursor: pointer;
+            &.is-flep{
+                transform: rotateY(180deg);
+            }
+            &.active{
+                transform: rotateY(180deg);
+            }
+            .face{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                backface-visibility: hidden;
+                border: 2.8px solid rgb(54, 57, 59);
+                background-color:rgb(79, 121, 158);
+            }
+            
+            .front-memory{
+                line-height: 130px;
+                
+                &::after{
+                    content: '?';
+                    color: rgb(255, 255, 255);
+                    font-size: 120px;
+                    font-weight: bold;
+                }
+            }
+            
+            .back-memory{
+                transform: rotateY(180deg);
+                img{
+                    width: 110px;
+                    height: 110px;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+}
+
+

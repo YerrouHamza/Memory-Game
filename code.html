@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking CSS Style Folder -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- linking Font Awesom -->
+
+    <!-- title -->
+    <title>Memory Game</title>
+</head>
+<body>
+    <!-- Geteng Player Info -->
+    <section class="player-info">
+        <div>
+            <form>
+                <input type="text" placeholder="Player Name">
+            </form>
+            <button>Start Game</button>    
+        </div>
+    </section>
+    <!-- Memory Game Info -->
+    <header class="header-game" id="header-game">
+        <div class="player-name">
+            Player : 
+            <span id="name"></span>
+        </div>
+        <div class="player-points">
+            <div>
+                Points :
+                <span id="points"> 0 </span>
+            </div>
+            <div>
+                failure :
+                <span id="failure"> 0 </span>
+            </div>
+        </div>
+    </header>
+
+    <form>
+        <label for="text">hamza</label>
+        <input type="text">
+    </form>
+    
+    <!-- Memory Game Content -->
+    <section class="memory-blocks-game" id="memory-blocks-game">
+        <!-- Block Memory For Html5 -->
+        <div class="head-memory" data-blocks='HTML-5'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/HTML-5.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='HTML-5'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/HTML-5.png" alt="">
+            </div>
+        </div>
+
+         <!-- Block Memory For Node Js -->
+         <div class="head-memory" data-blocks='Nodejs'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Nodejs.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='Nodejs'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Nodejs.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For CSS3 -->
+        <div class="head-memory" data-blocks='CSS'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/CSS-3.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='CSS'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/CSS-3.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For Python -->
+        <div class="head-memory" data-blocks='Python'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Python.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='Python'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Python.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For JavaScript -->
+        <div class="head-memory" data-blocks='JavaScript'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/JavaScript.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='JavaScript'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/JavaScript.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For GitHub -->
+        <div class="head-memory" data-blocks='GitHub'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Github.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='GitHub'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Github.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For Vue Js -->
+        <div class="head-memory" data-blocks='Vue-Js'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Vue-Js.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='Vue-Js'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Vue-Js.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For BootsTrap -->
+        <div class="head-memory" data-blocks='BootsTrap'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Bootstrap.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='BootsTrap'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Bootstrap.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For React -->
+        <div class="head-memory" data-blocks='React'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/React.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='React'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/React.png" alt="">
+            </div>
+        </div>
+
+        <!-- Block Memory For Visual Studio Code -->
+        <div class="head-memory" data-blocks='Visual-Studio-Code'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Visual-Studio-Code.png" alt="">
+            </div>
+        </div>
+        <div class="head-memory" data-blocks='Visual-Studio-Code'>
+            <div class="face front-memory"></div>
+            <div class="face back-memory">
+                <img src="Photos/Visual-Studio-Code.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div id="sound-effects">
+        <audio src="Sound-effects/mixkit-arcade-game-over.wav" preload="auto" id="over"></audio>
+        <audio src="Sound-effects/mixkit-arcade-game-bones.wav" preload="auto" id="bones"></audio>
+    </div>
+    <script src="/JavaScript/javascript.js"></script>
+</body>
+</html>
